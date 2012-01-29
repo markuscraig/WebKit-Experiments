@@ -1,0 +1,210 @@
+.buttonContainer {
+	background-color: #CECEEE;
+	padding: 10px 10px 10px 10px;
+	
+	-webkit-perspective: 600;
+     -moz-perspective: 600;
+      -ms-perspective: 600;
+       -o-perspective: 600;
+          perspective: 600;
+}
+
+.buttonNone {
+	/* Nothing! */
+}
+
+.buttonBasic {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+}
+
+.buttonHover:hover {
+	background-color: #00501E;
+	border-color: #003517;
+}
+
+.buttonActive:active {
+	background-color: #00451A;
+	border-color: #00280F;
+}
+
+/*
+ * The latest webkit supports "border-radius",
+ * Use "-webkit-border-radius" for older versions of webkit
+ */
+.buttonBorderRadius {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+.buttonBorderRadiusDifferent {
+	border-radius: 10px 20px 0 5px;
+	-webkit-border-radius: 20px 40px 0 80px;
+}
+
+.buttonBorderRadiusElliptical {
+	border-radius: 12px / 20px;
+	-webkit-border-radius: 12px / 20px;
+}
+
+/* controls background overflow */
+.buttonBorderRadiusBleedFix {
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.buttonLinearGradient {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#007231),
+		to(#004B23) /* NO COMMA AFTER LAST VALUE! */
+	);
+}
+
+.buttonGradientColorStops {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#007231),
+		to(#004B23),
+		color-stop(0.3, #00893B) /* add lighter shade of green 30% down from the top */
+	);
+}
+
+.buttonLinearGradientHover:hover {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#005E27),
+		to(#003719) /* NO COMMA AFTER LAST VALUE! */
+	);
+}
+
+.buttonLinearGradientActive:active {
+	background-color: #00451A;
+	border-color: #00280F;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#004F1D),
+		to(#00280F) /* NO COMMA AFTER LAST VALUE! */
+	);
+}
+
+.buttonRadialGradient {
+	background-image: -webkit-gradient(
+		radial,
+		50% 50%, /* start at the center */
+		20,      /* starts with 20px radius */
+		50% 50%, 
+		100,     /* ends with 100px radius */
+		from(#007231),
+		to(#004B23),
+		color-stop(0.3, #00893B) /* NO COMMA AFTER LAST VALUE! */
+	);
+}
+
+.buttonNewLinearGradient {
+	background-image: -webkit-linear-gradient(
+		#007231,
+		#00893B 30%,
+		#004B23
+	);
+}
+
+.buttonNewLinearGradientAngle {
+	background-image: -webkit-linear-gradient(
+		45deg,
+		#007231,
+		#00893B 30%,
+		#004B23
+	);
+}
+
+.buttonRepeatingLinearGradient {
+	background-image: -webkit-repeating-linear-gradient(
+		blue,
+		green 10px,
+		white 20px
+	);
+}
+
+.buttonRepeatingLinearGradientStriped {
+	background-image: -webkit-repeating-linear-gradient(
+		red,
+		red 5px,
+		white 5px,
+		white 10px
+	);	
+}
+
+@font-face {
+	font-family: 'Ballpark';
+	src: url('../fonts/ballpark_weiner.ttf') format('truetype');
+}
+
+.buttonEmbeddedFontFace {
+	font-family: Ballpark, Arial;
+}
+
+.buttonTextShadow {
+	text-shadow: 2px 2px 2px #333;
+}
+
+.buttonMultipleTextShadow {
+	text-shadow: 2px 2px 2px #333, 1px 3px 5px #AAA;
+}
+
+.buttonBoxShadow {
+	-webkit-box-shadow: 1px 3px 8px #333;
+	box-shadow: 1px 3px 8px #333;	
+}
+
+.buttonMultipleBoxShadow {
+	-webkit-box-shadow: 1px 3px 8px #333, 3px 5px 10px #AAA;
+	box-shadow: 1px 3px 8px #333, 3px 5px 10px #AAA;	
+}
+
+.buttonInsetBoxShadow {
+	-webkit-box-shadow: inset 1px 3px 8px #333;
+	box-shadow: inset 1px 3px 8px #333;	
+}
+
+.buttonBoxShadowSpreadRadius {
+	-webkit-box-shadow: 1px 3px 8px 2px #333;
+	box-shadow: 1px 3px 8px 2px #333;	
+}
+
+.buttonTextShadowOpacity {
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.buttonBoxShadowOpacity {
+	-webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, .6);
+	box-shadow: 1px 3px 8px rgba(0, 0, 0, .6);
+}
+
+.buttonFontFaceTextGradient {
+	font-family: Ballpark, Arial;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#F7941D),
+		to(#ED1C24)
+	);
+}

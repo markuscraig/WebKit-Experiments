@@ -1,0 +1,104 @@
+.buttonTransformTranslation {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+	
+	/* transform does not affect the layout of other elements :) */
+	-webkit-transform: translate(-40px, 10px);
+}
+
+.buttonTransformRotation {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+	
+	/* transform does not affect the layout of other elements :) */
+	-webkit-transform: rotate(-6deg);
+}
+
+.buttonTransformScaleXY {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+	
+	/* transform does not affect the layout of other elements :) */
+	-webkit-transform: scale(0.5);
+}
+
+.buttonTransformScaleFlip {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+	
+	/* transform does not affect the layout of other elements :) */
+	-webkit-transform: scale(-1, 1);
+}
+
+.buttonTransformSkewX {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+	
+	/* transform does not affect the layout of other elements :) */
+	-webkit-transform: skewX(-30deg);
+}
+
+.buttonTransformSkewY {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+	
+	/* transform does not affect the layout of other elements :) */
+	-webkit-transform: skewY(3deg);
+}
+
+.buttonTransformSkewXY {
+	display: block;
+	padding: 10px 45px;
+	background-color: #007236;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 45px;
+	text-decoration: none;
+	border: 2px solid #004B23;
+	
+	/* transform does not affect the layout of other elements :) */
+	-webkit-transform: skew(-30deg, 3deg);
+}
+
+.buttonTransformOriginTopLeft {
+	/* transform does not affect the layout of other elements :) */
+	/* the origin is in the middle of the element by default */
+	-webkit-transform-origin: top left;
+}
+
