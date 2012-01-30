@@ -1,0 +1,16 @@
+/* css2 basic attribute selector - if the anchor has a 'title' attribute */
+a[title] {
+	font-family: Arial, sans;
+	font-size: 32px;
+}
+
+/* css2 attribute value selector */
+a[href="http://www.markcraig.net"] {
+	font-family: Arial, sans;
+	font-size: 32px;
+}
+
+/* css2 form attribute selector - selecting multiple attributes */
+input[type="checkbox"][name="test"] {
+	margin: 0px 20px;
+}
