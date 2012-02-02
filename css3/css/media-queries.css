@@ -1,0 +1,42 @@
+/* css2 print media type */
+@media print {
+	* { margin: 0; }
+}
+
+/* css2 screen media type */
+@media print {
+	* { margin: 20px; }
+}
+
+@import url(screen-stylesheet.css) screen;
+
+/* basic media query */
+@media (orientation: landscape) {
+	/* style rules here */
+}
+/* media queries can follow a media type by using 'and' */
+@media screen and (orientation: landscape) {
+	/* style rules here */
+}
+
+/* combine multiple media queries */
+@media screen and (orientation: landscape) and (min-device-width: 420px) {
+	/* style rules here */
+}
+
+/* using 'not' */
+@media not screen and (orientation: landscape) {
+	/* style rules here */	
+}
+
+/* flexible layouts based on media queries */
+@media screen and (max-width: 420px) {
+}
+@media screen and (min-width: 421px) and (max-width: 1223px) {
+}
+@media screen and (min-width: 1224px) {
+}
+
+/* ipad-1,2 hack media query */
+@media screen and (device-width: 768px) {
+}
