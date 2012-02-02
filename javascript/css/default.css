@@ -1,0 +1,40 @@
+h1 {
+	display: block;
+	padding: 40px 10px 40px 10px;
+	background-color: #CECEEE;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 48px;
+	text-decoration: none;
+}
+
+h2 {
+	display: block;
+	padding: 10px 10px 10px 10px;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, sans;
+	font-size: 28px;
+	text-decoration: none;
+}
+
+a {
+	font-family: Arial, sans;
+	font-size: 18px;
+}
+
+.toc {
+	font-family: Arial, sans;
+	font-size: 24px;
+}
+
+.sectionBodyContainer {
+	border-style: dashed;
+	border-color: #8E8EFF;
+	margin: 20px;
+	padding: 30px 10px 30px 10px;
+	background-color: #CECEEE;
+	color: #FFF;
+	font-family: Arial, sans;
+	font-size: 28px;
+}

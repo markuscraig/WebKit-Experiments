@@ -14,3 +14,179 @@ a[href="http://www.markcraig.net"] {
 input[type="checkbox"][name="test"] {
 	margin: 0px 20px;
 }
+
+/* css3 advanced attribute selectors - begins with */
+a[href^="http://nodejs"] {
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 advanced attribute selectors - ends with */
+a[href$="/examples"] {
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 advanced attribute selectors - contains */
+a[href*="/api/"] {
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css2 descendent element selector */
+ul li a[title] {
+	color: blue;
+	font-family: Arial, sans;
+	font-size: 32px;
+}
+
+/* css2 child element (direct descendent) selector */
+ul.main-list > li {
+	color: red;
+	font-family: Arial, sans;
+	font-size: 22px;
+}
+
+/* css2 adjacent sibling selector */
+ul.text-block h3 + p {
+	color: orange;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css2 adjacent sibling selector */
+ul.siblings-block h3 ~ p {
+	color: orange;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css2 'first-child' pseudo-class */
+ul.first-child-block li:first-child {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 'last-child' pseudo-class */
+ul.last-child-block li:last-child {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css2 any 'first-child' pseudo-class */
+div.any-first-child-block *:first-child {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 any 'last-child' pseudo-class */
+div.any-last-child-block *:last-child {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 'nth-child' pseudo-class */
+ul.nth-child-block li:nth-child(2) {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 'nth-child' odd / even pseudo-class */
+ul.nth-child-even-block li:nth-child(even) {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 'only-child' pseudo-class */
+div.only-child-block li:only-child {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+/* css3 'empty' pseudo-class */
+div.empty-block li:empty {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;	
+}
+
+div.first-type-child-block > p:first-of-type {
+	color: orange;
+	font-family: Arial, sans;
+	font-size: 22px;
+}
+
+div.negation-child-block li:not(:first-child) {
+	color: orange;
+	font-family: Arial, sans;
+	font-size: 22px;	
+}
+
+div:target {
+	border: 3px solid red;
+}
+
+input:focus {
+	background-color:yellow;
+}
+
+input[type="checkbox"]:checked {
+	border:3px solid #090;
+}
+
+input[type="checkbox"]:indeterminate {
+	color:blue;	
+}
+
+input[type="checkbox"]:enabled {
+	/* just an example */
+}
+
+input[type="checkbox"]:disabled {
+	/* just an example */
+}
+
+/* language styling; depends on <html lang="en"> */
+div.lang-block li:lang(en) {
+	color: orange;
+	font-family: Arial, sans;
+	font-size: 22px;
+	margin-left: 20px;
+}
+
+div.first-letter-block p:first-letter {
+	color: purple;
+	font-family: Arial, sans;
+	font-size: 32px;
+}
+
+div.first-line-block {
+	margin: 0px 20px;
+}
+
+div.first-line-block p:first-line {
+	color: orange;
+	margin: 0px 20px;
+}
+
+div.before-block li:before {
+	content: "[BEFORE]";
+	padding-right: 5px;
+}
+
+div.after-block li:after {
+	content: "[AFTER]";
+	padding-left: 5px;
+}
+
+div.selection-block ::selection {
+	background-color: green;
+	color: yellow;
+}
